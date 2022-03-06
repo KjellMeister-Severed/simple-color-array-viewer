@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="testarea">
+
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", init)
+        colors= ["#69e8df",
+        "#ec633b",
+        "#5aeda3",
+        "#cd6ee4",
+        "#82e771",
+        "#947af0",
+        "#cee657",
+        "#5e8aef",
+        "#7fbc33",
+        "#e85bb7",
+        "#3eb346",
+        "#cf7bcf",
+        "#79a634",
+        "#1288da",
+        "#dfc43b",
+        "#3d9cf0",
+        "#e9a73e",
+        "#559bd4",
+        "#d97f2b",
+        "#55bee9",
+        "#ec5b64",
+        "#36b771",
+        "#eb5c8b",
+        "#4cdeba",
+        "#d385b7",
+        "#76b257",
+        "#9386cf",
+        "#b5ba43",
+        "#d9a8ec",
+        "#95972c",
+        "#99afed",
+        "#b99331",
+        "#4ec9d5",
+        "#e2815e",
+        "#319c9a",
+        "#e7de76",
+        "#dd838a",
+        "#93d98a",
+        "#c08957",
+        "#47aa8b",
+        "#e6b57e",
+        "#59a56c",
+        "#e9dd96",
+        "#91e0b1",
+        "#a3954c",
+        "#c7ed92",
+        "#939058",
+        "#b5c17a",
+        "#7b9845",
+        "#789f5e"]
+    function init(){
+        for (const argumentsKey in colors) {
+            document.getElementById("testarea").innerHTML += `<div style="width: 20rem; color: black; background-color: ${colors[argumentsKey]}; padding: 1rem 0 1rem 1rem; font-family: 'Arial',serif">
+                    demoText
+                </div>
+`
+        }
+
+    }
+</script>
+</body>
+</html>
